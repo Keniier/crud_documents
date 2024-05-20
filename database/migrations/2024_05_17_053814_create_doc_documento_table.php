@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('doc_documento', function (Blueprint $table) {
             $table->id('doc_id');
             $table->string('doc_nombre', 50);
-            $table->integer('doc_codigo');
+            $table->string('doc_codigo');
             $table->text('doc_contenido');
             $table->unsignedBigInteger('doc_id_tipo');
             $table->unsignedBigInteger('doc_id_proceso');

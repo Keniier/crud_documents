@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('pro_proceso', function (Blueprint $table) {
             $table->id('pro_id');
-            $table->string('pro_prefijo', 20);
             $table->string('pro_nombre', 60);
+            $table->string('pro_prefijo', 20);
             $table->timestamps();
         });
     }
