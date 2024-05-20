@@ -6,3 +6,7 @@
 
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
+
+.prop_color {
+    background: linear-gradient(to top, orange 0%, orange 20%, yellow 100%);
+}
