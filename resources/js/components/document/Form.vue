@@ -115,8 +115,6 @@ export default {
         generateDocumentCode() {
             const { document_process, document_type } = this.document_data;
 
-            console.log(document_process['pro_id'] !== this.data_form?.doc_id_proceso || document_type['tip_id'] !== this.data_form?.doc_id_tipo);
-
             if ((document_process['pro_id'] && document_type['tip_id']) && (document_process['pro_id'] !== this.data_form?.doc_id_proceso || document_type['tip_id'] !== this.data_form?.doc_id_tipo)) {    
 
                 const filter_record = this.document_list?.filter(obj =>

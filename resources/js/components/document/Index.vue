@@ -62,6 +62,7 @@ export default {
             axios.delete(`/document/delete/${id}`)
                 .then(res => {
                     console.log(res);
+                    console.log('Registo Eliminado');
                 }).catch(error => {
                     console.log(error.response);
                 }).finally(f => {

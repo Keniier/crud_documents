@@ -35,7 +35,6 @@ export default {
 
     watch: {
         event_edit_id(newVal, oldVal) {
-            console.log('cambio');
             if (newVal === null) {
                 this.type_form = 'insert';
                 this.data_form = null;
@@ -50,7 +49,6 @@ export default {
         getDocumentById(id){
             axios.get(`document/get/${id}`)
                 .then(res => {
-                    console.log(res.data);
                     this.data_form = res.data.document
                 }).catch(error => {
                     console.log(error.response);
