@@ -23,10 +23,10 @@ class Document extends Model
 
     // relaciones de documento hacia tipo y proceso
     public function documentType(){
-        $this->belongsTo(DocumentType::class,  'doc_id_tipo', 'tip_id');
+       return  $this->belongsTo(DocumentType::class,  'doc_id_tipo', 'tip_id');
     }
 
     public function documentProcess(){
-        $this->belongsTo(DocumentProcess::class,  'doc_id_proceso', 'pro_id');
+        return $this->belongsTo(DocumentProcess::class,  'doc_id_proceso', 'pro_id');
     }
 }
