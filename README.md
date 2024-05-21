@@ -1,6 +1,7 @@
 # Crud Documentos 🚀
 
 Prueba técnica: desarrollo de CRUD de registro de documentos utilizando PHP.
+Demo en linea: 
 
 ## Caracteristicas
 
@@ -71,9 +72,13 @@ contraseña: admin123
 ```
 
 #### Diagrama
-![Diagrama de Us0](/public/img/Uso.png)
+- Diagrama de uso
+![Diagrama de Uso](/public/img/Uso.png)
+- Diagrama de la solucion MVC
 ![Diagrama de MVC](/public/img/MVC.jpg)
+- Modelo de datos
+![Diagrama de MVC](/public/img/DB.png)
 
 ## Autor ✒️
 
-* **Kenier Morales** - *Dev* - [KeniierM](https://github.com/Keniier)(https://www.linkedin.com/in/keniierm/)
+* **Kenier Morales** - *Dev* - [KeniierM](https://github.com/Keniier) [Linkedin](https://www.linkedin.com/in/keniierm/)
