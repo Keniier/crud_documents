@@ -26,14 +26,14 @@
             <div class="my-2 col-12" v-if="document_data.doc_contenido && type_form === 'edit'">
                 <label class="form-label">Documento Subido</label>
                 <div class="list-group">
-                    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                    <a :href="document_data.doc_contenido" class="list-group-item list-group-item-action active" aria-current="true">
                         {{document_data.doc_contenido}}
                     </a>
                 </div>
             </div>
             <div class="my-2 col-12">
                 <label class="form-label" for="input-file">{{ document_data.doc_contenido ? 'Reemplazar' : 'Añadir'}} Contenido:</label>
-                <input type="file" id="input-file" class="form-control" @change="setFile" :readonly="type_form === 'insert'">
+                <input type="file" id="input-file" class="form-control" @change="setFile" :required="type_form === 'insert'">
             </div>
             <div class="my-2 d-flex justify-content-end">
                 <button type="button" id="btn_close" class="btn btn-outline-secondary mx-1" data-bs-dismiss="modal">Cerrar</button>
