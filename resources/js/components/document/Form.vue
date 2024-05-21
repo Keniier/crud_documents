@@ -26,7 +26,7 @@
             <div class="my-2 col-12" v-if="document_data.doc_contenido && type_form === 'edit'">
                 <label class="form-label">Documento Subido</label>
                 <div class="list-group">
-                    <a :href="document_data.doc_contenido" class="list-group-item list-group-item-action active" aria-current="true">
+                    <a :href="'/storage/'+document_data.doc_contenido" class="list-group-item list-group-item-action active" aria-current="true">
                         {{document_data.doc_contenido}}
                     </a>
                 </div>
