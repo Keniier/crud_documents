@@ -20,7 +20,7 @@
                     <td>{{ `${item.document_type.tip_nombre} ( ${item.document_type.tip_prefijo} )` }}</td>
                     <td>{{ item.doc_codigo }}</td>
                     <td>
-                        <a :href="'/storage/'+item.doc_contenido">{{ item.doc_contenido }}</a>
+                        <a target="_blank" :href="'/storage/'+item.doc_contenido">{{ item.doc_contenido }}</a>
                     </td>
                     <td class="d-flex text-center">
                         <button class="btn btn-primary btn-circle btn-sm mx-2" data-bs-toggle="modal" data-bs-target="#modalDocument" @click="editDocument(item.doc_id)"> Editar </button>
