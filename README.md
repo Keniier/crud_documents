@@ -2,6 +2,8 @@
 
 Prueba técnica: desarrollo de CRUD de registro de documentos utilizando PHP.
 Demo en linea: http://18.118.163.163/
+(usuario: admin@gmail.com - contraseña: admin123)✅
+Debido a una configuración temporal del servidor, el enlace se envió en HTTP en lugar de HTTPS. Estoy en proceso de cambiarlo.
 
 ## Caracteristicas
 
@@ -63,12 +65,6 @@ npm run build
 #### Ejecutar el proyecto
 ```bash
 php artisan serve
-```
-
-#### Credenciales de ingreso
-```
-Usuario-Email: admin@gmail.com
-contraseña: admin123
 ```
 
 #### Diagrama
