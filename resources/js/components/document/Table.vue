@@ -19,10 +19,9 @@
                     <td>{{ `${item.document_process.pro_nombre} ( ${item.document_process.pro_prefijo} )` }}</td>
                     <td>{{ `${item.document_type.tip_nombre} ( ${item.document_type.tip_prefijo} )` }}</td>
                     <td>{{ item.doc_codigo }}</td>
-                    <!-- <td>
-                        <a :href="document_data.doc_contenido"></a>
-                    </td> -->
-                    <td>{{ item.doc_contenido }}</td>
+                    <td>
+                        <a :href="'/storage/'+item.doc_contenido">{{ item.doc_contenido }}</a>
+                    </td>
                     <td class="d-flex text-center">
                         <button class="btn btn-primary btn-circle btn-sm mx-2" data-bs-toggle="modal" data-bs-target="#modalDocument" @click="editDocument(item.doc_id)"> Editar </button>
                         <button class="btn btn-danger btn-circle btn-sm"  @click="deleteDocument(item.doc_id)">Eliminar</button>
